@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #222;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .earth-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        .earth {
+            width: 100%;
+            height: 100%;
+            background: url('https://media.istockphoto.com/id/186019678/photo/planet-earth-with-some-clouds-americas-view.jpg?s=612x612&w=0&k=20&c=W4TexKB-n-Y3xu6TI03zJW5qmOKN0ErRST8hhVKZG50=') no-repeat center center;
+            background-size: cover;
+            border-radius: 50%;
+            animation: rotateEarth 10s linear infinite;
+        }
+
+        @keyframes rotateEarth {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <title>Rotating Earth</title>
+</head>
+<body>
+    <div class="earth-container">
+        <div class="earth"></div>
+    </div>
+    <h1>Harihar Tours & Travel</h1>
+</body>
+</html>
