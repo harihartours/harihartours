@@ -3,54 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harihar Tours & Travel</title>
     <style>
         body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #000;
-            overflow: hidden;
-        }
-
-        h1 {
-            color: #fff;
             font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
             text-align: center;
-            margin-top: 20px;
         }
 
-        .earth-container {
-            position: relative;
-            width: 200px;
-            height: 200px;
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 1em;
         }
 
-        .earth {
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
             width: 100%;
-            height: 100%;
-            background: url('https://raw.githubusercontent.com/harihartours/harihartours/release/23.11.100/electric-2310933_1280.jpg') no-repeat center center;
-            background-size: cover;
-            border-radius: 100%;
-            animation: rotateEarth 10s linear infinite;
-        }
-
-        @keyframes rotateEarth {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
         }
     </style>
-    <title>Rotating Earth</title>
 </head>
 <body>
-    <div class="earth-container">
-        <div class="earth"></div>
-    </div>
-    <h1>Harihar Tours & Travel</h1>
+
+    <header>
+        <h1>Harihar Tours & Travel</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Packages</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Welcome to Harihar Tours & Travel</h2>
+        <p>Explore the world with our exciting travel packages. Unforgettable adventures await!</p>
+        <!-- Add more content here as needed -->
+    </section>
+
+    <footer>
+        &copy; 2023 Tours & Travel. All rights reserved.
+    </footer>
+
 </body>
 </html>
